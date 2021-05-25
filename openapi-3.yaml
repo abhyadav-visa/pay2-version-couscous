@@ -45,6 +45,9 @@ paths:
       summary: make payment
       description: This can only be done by the logged in user.
       operationId: makePayment
+      security:
+        - petstore_auth: []
+        - api_key: []
       requestBody:
         description: Make a payment using post
         content:
